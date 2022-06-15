@@ -1,0 +1,39 @@
+{
+  "name": "ep_dautoscrolldown",
+  "author": {
+    "name": "Dhiraj Arun",
+    "email": "dhrjarun@gmail.com"
+  },
+  "version": "0.0.1",
+  "description": "A plugin for Etherpad, which will autoscroll your pad as more lines appear",
+  "keywords": [
+    "etherpad",
+    "plugin",
+    "ep",
+    "autoscrolldown"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DhrjArun/ep_dautoscrolldown.git"
+  },
+  "homepage": "https://github.com/DhrjArun/ep_dautoscrolldown#readme",
+  "bugs": {
+    "url": "https://github.com/DhrjArun/ep_dautoscrolldown/issues"
+  },
+  "engines": {
+    "node": ">=12.17.0"
+  },
+  "peerDependencies": {
+    "ep_etherpad-lite": ">=1.8.6"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.17.0",
+    "eslint-config-etherpad": "^3.0.13",
+    "typescript": "^4.7.3"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  }
+}
