@@ -11,6 +11,10 @@ const scrollToDown = () => {
 const autoScrollBtn = document.querySelector('[data-type="button"][data-key="autoscrolltodown"] a');
 
 exports.postAceInit = (name, context) => {
+  if (!autoScrollBtn) {
+    return;
+  }
+
   const {onLoad, displayButton} = context.clientVars.dAutoScrollDownSettings;
 
   autoScrollBtn.onclick = () => {
@@ -40,6 +44,10 @@ exports.postAceInit = (name, context) => {
 };
 
 exports.acePostWriteDomLineHTML = (name, context) => {
+  if (!autoScrollBtn) {
+    return;
+  }
+
   if (autoScrollBtn.classList.contains('selected')) {
     scrollToDown();
   }
